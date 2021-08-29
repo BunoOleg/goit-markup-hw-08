@@ -1,0 +1,33 @@
+.footer {
+  background-color: $primery-color-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  font-family: $main-logo-font;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $white-color;
+  text-decoration: none;
+
+  & > span {
+    color: $accent-color;
+  }
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: $white-color;
+  margin-top: 20px;
+}
+.contacts-footer__item {
+  margin-top: 9px;
+}
+.contacts-footer__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $address-color;
+}
