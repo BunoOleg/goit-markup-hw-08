@@ -3,14 +3,14 @@
 }
 
 .preference {
-  display: flex;
-
   &__item {
-    width: 270px;
-    margin-right: 30px;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
   }
   &__item:nth-child(4n) {
-    margin-right: 0;
+    margin-bottom: 0;
   }
 
   &__title {
@@ -29,11 +29,10 @@
   }
 
   &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
-    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     background-color: $secondary-color-bg;
     border-radius: 4px;
