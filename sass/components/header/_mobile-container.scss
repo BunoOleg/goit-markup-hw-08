@@ -19,6 +19,10 @@
   top: 0;
   right: 0;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mobile-close,
 .mobile-open {
