@@ -7,7 +7,6 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $transition, visibility $transition;
-  overflow: scroll;
 
   &.is-hidden {
     visibility: hidden;
@@ -47,7 +46,7 @@
 }
 .icon-close {
   fill: $black-color;
-  fill: $transition;
+  transition: $transition;
 }
 .close-button:hover .icon-close {
   fill: $accent-color;

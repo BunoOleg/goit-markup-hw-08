@@ -1,0 +1,30 @@
+@media screen and(min-width: 768px) {
+  .nav-contacts {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.67;
+      color: $primary-text-color;
+      transition: color $transition;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: $accent-color;
+    }
+    &__item + &__item {
+      margin-top: 10px;
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: $accent-color;
+    }
+    &__icon {
+      margin-right: 8px;
+    }
+  }
+}
