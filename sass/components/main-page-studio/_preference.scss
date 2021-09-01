@@ -1,32 +1,22 @@
 .preference {
   margin: 0;
   padding: 0;
-  @media screen and (min-width: 480x) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
   &__item {
     @media screen and (min-width: 480px) {

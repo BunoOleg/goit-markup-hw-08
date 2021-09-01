@@ -39,21 +39,12 @@ ul {
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -320,13 +311,6 @@ img {
   padding: 0;
 }
 
-@media screen and (min-width: 480x) {
-  .preference {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .preference {
     display: -webkit-box;
@@ -336,8 +320,6 @@ img {
         flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -350,8 +332,6 @@ img {
         flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -360,8 +340,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -450,9 +428,48 @@ img {
   line-height: 1.71;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-work {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work__item {
+    margin-right: 30px;
+    position: relative;
+  }
+  .work__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .work__title {
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    padding: 27px 80px;
+    width: 370px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    color: #212121;
   }
 }
 
