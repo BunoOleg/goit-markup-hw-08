@@ -2,7 +2,7 @@
   .nav-contacts {
     margin-left: auto;
     display: flex;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
       display: inline-block;
       flex-direction: column;
       &__item + &__item {
