@@ -9,16 +9,22 @@
     color: $accent-color;
   }
 }
-.menu-toggle {
-  display: none;
-}
 
 @media screen and(min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
   .nav-conainer {
     display: flex;
     align-items: center;
   }
   .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-container {
     display: flex;
     align-items: center;
   }
@@ -61,5 +67,15 @@
       background-color: $accent-color;
       border-radius: 2px;
     }
+  }
+}
+@media screen and(min-width: 768px) and(max-width: 1199px) {
+  .site-nav {
+    margin-left: 88px;
+  }
+}
+@media screen and(min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
   }
 }
