@@ -1,10 +1,12 @@
 .footer-title {
-  font-weight: 700px;
+  font-weight: 700;
   color: $white-color;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .social-item {
   margin-right: 10px;
