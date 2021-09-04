@@ -33,7 +33,11 @@
   .menu-toggle:focus .mobile-close {
     fill: $accent-color;
   }
-
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   .site-nav {
     padding-left: 40px;
     padding-top: 48px;
@@ -63,7 +67,6 @@
 
   .nav-contacts {
     padding-left: 40px;
-    margin-top: 302px;
     display: flex;
     flex-direction: column-reverse;
 
@@ -87,5 +90,29 @@
     &__link:focus &__icon {
       fill: $accent-color;
     }
+  }
+  .social-header {
+    display: flex;
+    padding-left: 40px;
+
+    &__item + &__item {
+      margin-left: 10px;
+    }
+    &__link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      color: $accent-color;
+    }
+    .social-header__link {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle,
+  .social-header {
+    display: none;
   }
 }

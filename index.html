@@ -18,59 +18,56 @@
 
 <body>
     <!--Шапка-->
-    <header>
+    <header class="page-header">
         <div class="container nav-conainer">
-            <nav class="nav">
-                <a href="./index.html" class="nav-logo">
-                    <span>Web</span>Studio
-                </a>
-                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="40px" height="40px">
-                        <use href="./images/symbol-defs2.svg#icon-nav-menu"></use>
-                    </svg>
-                    
-                </button>
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu">
-                    <svg width="40px" height="40px">
-                        <use href="./images/symbol-defs2.svg#icon-nav-close"></use>
-                    </svg>  
+                    <a href="./index.html" class="nav-logo">
+                        <span>Web</span>Studio</a>
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="40px" height="40px">
+                            <use href="./images/symbol-defs2.svg#icon-nav-menu"></use>
+                        </svg>
                     </button>
-                <!-- Навігація-->
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">
-                            Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            
-            <!-- Контакти-->
-
-            <ul class="nav-contacts">
-                <!-- Link to e-mail address -->
-                <li class="nav-contacts__item">
-                    <a href="mailto:info@devstudio.com" class="nav-contacts__link">
-                        <svg class="nav-contacts__icon" width="16px" height="12px">
-                            <use href="./images/symbol-defs2.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <!-- Link to phone number  -->
-                <li class="nav-contacts__item"><a href="tel:+380961111111" class="nav-contacts__link">
-                        <svg class="nav-contacts__icon" width="10px" height="16px">
-                            <use href="./images/symbol-defs2.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a> 
+                    <div class="menu-container js-menu-container" id="mobile-menu">
+                        <button class="menu-toggle js-close-menu">
+                        <svg width="40px" height="40px">
+                            <use href="./images/symbol-defs2.svg#icon-nav-close"></use>
+                        </svg>  
+                        </button>
+                    <!-- Навігація-->
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    </ul>         
+                <!-- Контакти-->
+                <ul class="nav-contacts">
+                    <!-- Link to e-mail address -->
+                    <li class="nav-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="nav-contacts__link">
+                            <svg class="nav-contacts__icon" width="16px" height="12px">
+                                <use href="./images/symbol-defs2.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    </ul>
-                </div>
-                </nav>
-            
+                    <!-- Link to phone number  -->
+                    <li class="nav-contacts__item"><a href="tel:+380961111111" class="nav-contacts__link">
+                            <svg class="nav-contacts__icon" width="10px" height="16px">
+                                <use href="./images/symbol-defs2.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a> 
+                    </li>
+                </ul>
+                <ul class="social-header">
+                    <li class="social-header__item"><a class="social-header__link current">Instagram</a></li>
+                    <li class="social-header__item"><a class="social-header__link current">Twitter</a></li>
+                    <li class="social-header__item"><a class="social-header__link current">Facebook</a></li>
+                    <li class="social-header__item"><a class="social-header__link ">LinkedIn</a></li>
+                </ul>
+            </div>      
         </div>
     </header>
-    <main>
-        <!--Герой-->
+    <main>     <!--Герой-->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
             <button type="button" class="button" data-modal-open>Заказать услугу</button>
@@ -153,7 +150,7 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img srcset="./images/team/phone/team1img.jpg 1x, ./images/team/phone/team1img@2x.jpg 2x, ./images/team/tablet/team1img.jpg 1x, ./images/team/tablet/team1img@2x.jpg 2x, ./images/team/desctop/team1img.jpg 1x, ./images/team/desctop/team1img@2x.jpg 2x" src="./images/img4.jpg" alt="Игорь Демьяненко" class="team__photo">
+                        <img srcset="./images/team/phone/team1img.jpg 1x, ./images/team/phone/team1img@2x.jpg 2x" src="./images/img4.jpg" alt="Игорь Демьяненко" class="team__photo">
                         <div class="team__box">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -194,7 +191,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img srcset="./images/team/phone/team2img.jpg 1x, ./images/team/phone/team2img@2x.jpg 2x, ./images/team/tablet/team2img.jpg 1x, ./images/team/tablet/team2img@2x.jpg 2x, ./images/team/desctop/team2img.jpg 1x, ./images/team/desctop/team2img@2x.jpg 2x" src="./images/img5.jpg" alt="Ольга Репина"  class="team__photo">
+                        <img srcset="./images/team/phone/team2img.jpg 1x, ./images/team/phone/team2img@2x.jpg 2x" src="./images/img5.jpg" alt="Ольга Репина"  class="team__photo">
                         <div class="team__box">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -235,7 +232,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img srcset="./images/team/phone/team3img.jpg 1x, ./images/team/phone/team3img@2x.jpg 2x, ./images/team/tablet/team3img.jpg 1x, ./images/team/tablet/team3img@2x.jpg 2x, ./images/team/desctop/team3img.jpg 1x, ./images/team/desctop/team3img@2x.jpg 2x" src="./images/img6.jpg" alt="Николай Тарасов"  class="team__photo">
+                        <img srcset="./images/team/phone/team3img.jpg 1x, ./images/team/phone/team3img@2x.jpg 2x" src="./images/img6.jpg" alt="Николай Тарасов"  class="team__photo">
                         <div class="team__box">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -276,7 +273,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img srcset="./images/team/phone/team4img.jpg 1x, ./images/team/phone/team4img@2x.jpg 2x, ./images/team/tablet/team4img.jpg 1x, ./images/team/tablet/team4img@2x.jpg 2x, ./images/team/desctop/team4img.jpg 1x, ./images/team/desctop/team4img@2x.jpg 2x" src=" ./images/img7.jpg" alt="Михаил Ермаков" class="team__photo">
+                        <img srcset="./images/team/phone/team4img.jpg 1x, ./images/team/phone/team4img@2x.jpg 2x" src=" ./images/img7.jpg" alt="Михаил Ермаков" class="team__photo">
                         <div class="team__box">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>

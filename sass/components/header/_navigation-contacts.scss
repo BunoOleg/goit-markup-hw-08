@@ -1,15 +1,5 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav-contacts {
-    display: flex;
-    flex-direction: column;
-    &__item + &__item {
-      margin-top: 10px;
-    }
-  }
-}
 @media screen and (min-width: 768px) {
   .nav-contacts {
-    margin-left: auto;
     &__link {
       text-decoration: none;
       font-weight: 500;
@@ -17,6 +7,10 @@
       line-height: 1.67;
       color: $primary-text-color;
       transition: color $transition;
+    }
+    &__icon {
+      fill: $primary-text-color;
+      transition: fill $transition;
     }
     &__link:hover,
     &__link:focus {
@@ -36,8 +30,6 @@
 @media screen and(min-width: 1200px) {
   .nav-contacts {
     display: flex;
-    align-items: center;
-
     &__item + &__item {
       margin-left: 30px;
     }
