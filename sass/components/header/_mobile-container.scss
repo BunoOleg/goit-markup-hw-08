@@ -1,118 +1,108 @@
-@media screen and (max-width: 767px) {
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
-    transform: translateX(100%);
-    background-color: $white-color;
-    transition: transform $transition;
-  }
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  .menu-toggle {
-    height: 40px;
-    border: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 0;
-  }
-  .mobile-close,
-  .mobile-open {
-    background-color: #fff;
-    fill: $black-color;
-    transition: $transition;
-  }
-  .menu-toggle:hover .mobile-open,
-  .menu-toggle:focus .mobile-open,
-  .menu-toggle:hover .mobile-close,
-  .menu-toggle:focus .mobile-close {
-    fill: $accent-color;
-  }
-  .menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .site-nav {
-    padding-left: 40px;
-    padding-top: 48px;
-
-    &__item + &__item {
-      margin-top: 32px;
-    }
-
-    &__link {
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 1.18;
-      color: $secondary-text-color;
-      display: block;
-
-      transition: color $transition;
-    }
-    &__link:focus,
-    &__link:hover {
-      color: $accent-color;
-    }
-    &__link.current {
-      color: $accent-color;
-    }
-  }
-
-  .nav-contacts {
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column-reverse;
-
-    &__link {
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.18;
-      color: $primary-text-color;
-      transition: color $transition;
-    }
-
-    &__link:hover,
-    &__link:focus {
-      color: $accent-color;
-    }
-    &__item + &__item {
-      margin-top: 32px;
-    }
-    &__link:hover &__icon,
-    &__link:focus &__icon {
-      fill: $accent-color;
-    }
-  }
-  .social-header {
-    display: flex;
-    padding-left: 40px;
-
-    &__item + &__item {
-      margin-left: 10px;
-    }
-    &__link {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.22;
-      color: $accent-color;
-    }
-    .social-header__link {
-      padding-right: 10px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-toggle,
-  .social-header {
+.menu-toggle,
+.menu-container {
+  @media screen and(min-width: 768px) {
     display: none;
   }
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(100%);
+  background-color: $white-color;
+  transition: transform $transition;
+  padding: 40px 48px;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.menu-toggle {
+  height: 40px;
+  width: 40px;
+  border: none;
+  margin-left: auto;
+  background-color: transparent;
+  padding: 0;
+  fill: $black-color;
+}
+.site-navp {
+  &__item + &__item {
+    margin-top: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    color: $secondary-text-color;
+    display: block;
+
+    transition: color $transition;
+  }
+  &__link:focus,
+  &__link:hover {
+    color: $accent-color;
+  }
+  &__link.current {
+    color: $accent-color;
+  }
+}
+
+.nav-contactsp {
+  display: flex;
+  flex-direction: column-reverse;
+  &__item + &__item {
+    margin-bottom: 32px;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.67;
+    color: $primary-text-color;
+    transition: color $transition;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__item + &__item {
+    margin-top: 32px;
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $accent-color;
+  }
+}
+.social-header {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $accent-color;
+
+  &__item + &__item {
+    margin-left: 20px;
+  }
+}
+.mobile-close,
+.mobile-open {
+  fill: $black-color;
+  transition: $transition;
+}
+.menu-toggle:hover .mobile-open,
+.menu-toggle:focus .mobile-open,
+.menu-toggle:hover .mobile-close,
+.menu-toggle:focus .mobile-close {
+  fill: $accent-color;
 }

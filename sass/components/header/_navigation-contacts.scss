@@ -1,34 +1,16 @@
-@media screen and (min-width: 768px) {
-  .nav-contacts {
-    &__link {
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.67;
-      color: $primary-text-color;
-      transition: color $transition;
-    }
-    &__icon {
-      fill: $primary-text-color;
-      transition: fill $transition;
-    }
-    &__link:hover,
-    &__link:focus {
-      color: $accent-color;
-    }
-
-    &__link:hover &__icon,
-    &__link:focus &__icon {
-      fill: $accent-color;
-    }
-    &__icon {
-      margin-right: 8px;
+.nav-contacts {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and(max-width: 1199px) {
+    &__item + &__item {
+      margin-top: 10px;
     }
   }
-}
-
-@media screen and(min-width: 1200px) {
-  .nav-contacts {
+  @media screen and(min-width: 1200px) {
+    align-items: center;
     display: flex;
     &__item + &__item {
       margin-left: 30px;
@@ -37,5 +19,30 @@
       display: flex;
       align-items: center;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $primary-text-color;
+    transition: color $transition;
+  }
+  &__icon {
+    fill: $primary-text-color;
+    transition: fill $transition;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $accent-color;
+  }
+  &__icon {
+    margin-right: 8px;
   }
 }
