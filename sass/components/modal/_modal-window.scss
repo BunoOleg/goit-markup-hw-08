@@ -1,3 +1,4 @@
+/*Модальне вікно*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -6,17 +7,16 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity $transition, visibility $transition;
-  overflow-y: scroll;
-
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-  &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .modal {
   padding: 40px;
@@ -30,7 +30,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.1);
-  transition: transform $transition;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button {
   position: absolute;
@@ -47,7 +47,7 @@
 }
 .icon-close {
   fill: $black-color;
-  transition: $transition;
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover .icon-close {
   fill: $accent-color;
