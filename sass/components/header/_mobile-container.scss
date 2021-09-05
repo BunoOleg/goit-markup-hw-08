@@ -7,7 +7,7 @@
 .menu-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -34,6 +34,7 @@
   fill: $black-color;
 }
 .site-navp {
+  margin-bottom: auto;
   &__item + &__item {
     margin-top: 32px;
   }
@@ -56,10 +57,14 @@
     color: $accent-color;
   }
 }
+.flex {
+  margin-top: auto;
+}
 
 .nav-contactsp {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 64px;
   &__item + &__item {
     margin-bottom: 32px;
   }

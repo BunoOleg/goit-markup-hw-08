@@ -263,9 +263,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -297,6 +294,10 @@ img {
   fill: #000000;
 }
 
+.site-navp {
+  margin-bottom: auto;
+}
+
 .site-navp__item + .site-navp__item {
   margin-top: 32px;
 }
@@ -320,6 +321,10 @@ img {
   color: #2196f3;
 }
 
+.flex {
+  margin-top: auto;
+}
+
 .nav-contactsp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +333,7 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-bottom: 64px;
 }
 
 .nav-contactsp__item + .nav-contactsp__item {
