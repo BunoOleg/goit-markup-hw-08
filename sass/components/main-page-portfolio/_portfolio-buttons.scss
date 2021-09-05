@@ -5,6 +5,9 @@
   &__item:last-child {
     margin-right: 0;
   }
+  &__item:nth-last-child(3) {
+    margin-right: 0;
+  }
   &__button {
     font-family: inherit;
     font-weight: 500;
