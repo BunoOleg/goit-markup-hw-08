@@ -35,18 +35,15 @@
 
 @media screen and (max-width: 767px) {
   .social-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  .social-container {
-    margin-left: 70px;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 

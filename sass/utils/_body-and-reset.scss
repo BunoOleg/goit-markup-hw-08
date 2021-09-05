@@ -65,12 +65,12 @@ img {
   text-align: center;
   color: $secondary-text-color;
 
-  @media screen and (max-width: 1169px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
     font-size: 28px;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
   }

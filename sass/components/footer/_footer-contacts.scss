@@ -40,3 +40,8 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and(max-width: 768px) {
+  .contacts-conainer {
+    margin-bottom: 60px;
+  }
+}
